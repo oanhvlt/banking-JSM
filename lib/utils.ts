@@ -67,6 +67,11 @@ export const formatDateTime = (dateString: Date) => {
 };
 
 export function formatAmount(amount: number): string {
+  // const formatter = new Intl.NumberFormat('vi-VN', {
+  //   style: 'currency',
+  //   currency: 'VND',
+  //   minimumFractionDigits: 2,
+  // });
   const formatter = new Intl.NumberFormat("en-US", {
     style: "currency",
     currency: "USD",
